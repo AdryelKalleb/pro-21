@@ -40,7 +40,7 @@ function draw() {
         music.play();
     }
 
-    if(block2.isTouching(ball)){
+    if(block2.isTouching(ball) && ball.bounceOff(block2)){
         ball.shapeColor = rgb(255,128,0);
  
     }
